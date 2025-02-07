@@ -1,7 +1,12 @@
 # Retrieval-Augmented Generation (RAG)
 
+![RAG Basic Architecture](images/RAG.jpg)
+
+*Source: [freecodecamp](https://www.youtube.com/watch?v=GWB9ApTPTv4&t=403s)*
+
+
 ## Overview
-This project implements a Retrieval-Augmented Generation (RAG) system using a combination of local LLM deployment, vector search, and API services to enhance document-based question answering.
+This project implements a [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) system using a combination of local LLM deployment, vector search, and API services to enhance document-based question answering.
 
 ## Prerequisites
 1. **Download and install Ollama:**
@@ -22,10 +27,10 @@ This project implements a Retrieval-Augmented Generation (RAG) system using a co
 
 ## Technology Stack
 - **Python**
-- **FastAPI** - API development
-- **LangChain** - RAG implementation
-- **Ollama** - Local LLM deployment (using Llama3.2)
-- **ChromaDB** - Vector store
+- **[FastAPI](https://fastapi.tiangolo.com/)** - API development
+- **[LangChain](https://www.langchain.com/)** - RAG implementation
+- **[Ollama](https://ollama.com/)** - Local LLM deployment (using Llama3.2)
+- **[ChromaDB](https://docs.trychroma.com/docs/overview/introduction)** - Vector store
 
 ## Core Features
 ### RAG System Implementation
@@ -88,7 +93,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system using a co
    ```
 4. Start the FastAPI server:
    ```bash
-   uvicorn main:app --reload
+   uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
    ```
 5. Access API documentation at:
    ```
