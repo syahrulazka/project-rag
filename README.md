@@ -6,7 +6,7 @@
 
 
 ## Overview
-This project presents an advanced [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) system that integrates [**Llama3.2**](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/) for local LLM deployment, [**nomic-embed-text**](https://ollama.com/library/nomic-embed-text) for precise text embeddings, and vector search techniques to optimize document-based question answering.
+This project presents a basic [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) system that integrates [**Llama3.2**](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/) for local LLM deployment, [**nomic-embed-text**](https://ollama.com/library/nomic-embed-text) for precise text embeddings, and vector search techniques to optimize document-based question answering.
 
 
 ## Prerequisites
