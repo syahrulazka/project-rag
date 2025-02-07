@@ -6,7 +6,8 @@
 
 
 ## Overview
-This project implements a [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) system using a combination of local LLM deployment, vector search, and API services to enhance document-based question answering.
+This project presents an advanced [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) system that integrates [**Llama3.2**](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/) for local LLM deployment, [**nomic-embed-text**](https://ollama.com/library/nomic-embed-text) for precise text embeddings, and vector search techniques to optimize document-based question answering.
+
 
 ## Prerequisites
 1. **Download and install Ollama:**
@@ -16,9 +17,13 @@ This project implements a [Retrieval-Augmented Generation (RAG)](https://aws.ama
    ```
    Or you can download from [Ollama](https://ollama.com/download) official website.
    
-3. **Pull the Llama3.2 model:**
+2. **Pull the Llama3.2 model:**
    ```bash
    ollama pull llama3.2
+   ```
+3. **Pull the nomic-embed-text model:**
+   ```bash
+   ollama pull nomic-embed-text
    ```
 4. **Start the Ollama server:**
    ```bash
@@ -59,10 +64,10 @@ This project implements a [Retrieval-Augmented Generation (RAG)](https://aws.ama
 ## System Architecture
 1. User uploads documents (PDF)
 2. System processes and extracts text
-3. Text is chunked and embeddings are stored in **ChromaDB**
+3. Text is chunked and embeddings are stored in **ChromaDB** using **nomic-embed-text** for text embedding
 4. User submits a query
 5. System retrieves relevant context using vector search
-6. LLM (via **Ollama**) generates a response with citations
+6. LLM (**Llama3.2 3B parameters**, via **Ollama**) generates a response with citations
 
 ## Setup Instructions
 1. Clone the repository:
