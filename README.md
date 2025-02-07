@@ -131,7 +131,7 @@ curl -X 'POST' \
 curl -X 'POST' \
   'http://localhost:8000/ask/' \
   -H 'accept: application/json' \
-  -H 'X-API-Key: projectragazka' \
+  -H 'X-API-Key: yourapikey' \
   -H 'Content-Type: application/json' \
   -d '{"query": "What is the best way to start a new habit?"}'
 ```
