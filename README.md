@@ -145,7 +145,6 @@ curl -X 'POST' \
 ## Future Improvements
 - Implement **streaming responses** for real-time user interactions
 - Add **support for more document formats** (e.g., Word, HTML)
-- Enhance **query expansion techniques** to improve retrieval accuracy
 - Develop a **web-based UI** for seamless user interaction
 
 ---
