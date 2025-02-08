@@ -146,7 +146,6 @@ curl -X 'POST' \
 - Implement **streaming responses** for real-time user interactions
 - Add **support for more document formats** (e.g., Word, HTML)
 - Enhance **query expansion techniques** to improve retrieval accuracy
-- Integrate **advanced authentication mechanisms** (OAuth, API keys)
 - Develop a **web-based UI** for seamless user interaction
 
 ---
